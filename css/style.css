@@ -1,0 +1,169 @@
+/*Global*/
+.container-fluid {
+    padding: 0 20px;
+    margin-top: 16px;
+}
+
+.icon {
+    height: 30px;
+    width: 25%;
+    border: 1px solid black;
+}
+
+button {
+    height: 30px;
+}
+
+/*Mobile Nav*/
+.mobile-nav {
+    padding: 8px 0px;
+}
+.nav-subhead {
+    border: 1px solid black;
+    padding: 8px 0;
+}
+
+.nav-subhead p {
+    margin-bottom: -8px;
+    line-height: 1.5;
+    padding-bottom: 8px;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+/*Left Nav*/
+
+.nav-header {
+    padding: 0.5rem 1rem;
+}
+
+.nav-link {
+    border: 1px solid black;
+}
+
+.spacer-nav {
+    height: 38.5vh;
+}
+
+/*Center Content*/
+
+.main-content {
+    padding: 4px;
+}
+
+.add-resource {
+    max-width: 150px;
+}
+
+.nav-link.active {
+    background-color: lightblue !important;
+}
+
+.resource-list {
+    border: 1px solid black;
+}
+
+.resource-card {
+    min-height: 196px;
+    border: 1px solid black;
+    position: relative;
+}
+
+/*Right Sidebar*/
+.col-icon {
+    width: 48px;
+}
+
+.icon {
+    width: 48px;
+}
+
+.search {
+    width: 57%;
+}
+
+.filter-brand { 
+    width: 90%;
+}
+
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    right: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.filter-search {
+    width: 131px;
+    position: absolute;
+    right: 24px;
+}
+/*Media Queries*/
+
+@media (min-width: 769px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .right-sidebar, .side-nav {
+        display: none;
+    }
+}
